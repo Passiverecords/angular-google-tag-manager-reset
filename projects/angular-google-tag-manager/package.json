@@ -1,6 +1,6 @@
 {
-  "name": "angular-google-tag-manager",
-  "version": "1.8.0",
+  "name": "@lesfabricants/angular-google-tag-manager",
+  "version": "1.8.1",
   "license": "MIT",
   "repository": {
     "type": "git",
