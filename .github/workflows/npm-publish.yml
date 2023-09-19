@@ -10,9 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Setup Node.js
-        uses: actions/setup-node@v1.4.4
+        uses: actions/setup-node@v3
         with:
-          version: 16.10.0
+          version: 18
           registry-url: 'https://registry.lesfabricants.io'
           scope: '@angular-google-tag-manager'
       - name: Load repository
