@@ -68,4 +68,14 @@ describe('GoogleTagManagerService', () => {
         expect(window.dataLayer[0].event).toEqual('gtm.js');
       });
     }));
+
+    it('should reset dataLayer', inject(
+      [GoogleTagManagerService],
+      (service: GoogleTagManagerService) => {
+        return service.pushTag(testObject).then(() => {
+          service.resetGtm();
+          expect(window.dataLayer[1]).toBeFalsy();
+        });
+      }
+    ));
 });
